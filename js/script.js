@@ -15,15 +15,16 @@ btnLamp.addEventListener("click", function () {
         lamp.src = "../img/white_lamp.png";
         imageBack.style.backgroundImage = "url('../img/bg-f1-dark.webp')";
         btnLamp.classList.remove("btn-outline-dark");
+        mainTitle.classList.remove("text-danger");
         btnLamp.classList.add("btn-outline-danger");
-        btnLamp.innerText = "ACCENDI";
-        mainTitle.innerText = "Accendi questa ";
+        btnLamp.innerHTML = `<i class="bi bi-lightbulb-fill"></i> ACCENDI`;
+        mainTitle.innerText = "Spento come la tua anima...";
     } else {
         lamp.src = "../img/yellow_lamp.png";
         imageBack.style.backgroundImage = "url('../img/bg-f1-light2.webp')";
         btnLamp.classList.add("btn-outline-dark");
         mainTitle.classList.add("text-danger");
-        btnLamp.innerText = "SPEGNI";
+        btnLamp.innerHTML = `<i class="bi bi-lightbulb"></i> SPEGNI`;
         mainTitle.innerText = "FERRARIII";
     }
     isPowerOn = !isPowerOn;
