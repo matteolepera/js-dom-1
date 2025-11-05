@@ -25,7 +25,7 @@ btnLamp.addEventListener("click", function () {
         btnLamp.classList.add("btn-outline-dark");
         mainTitle.classList.add("text-danger");
         btnLamp.innerHTML = `<i class="bi bi-lightbulb"></i> SPEGNI`;
-        mainTitle.innerText = "FERRARIII";
+        mainTitle.innerText = "Ferrari" + "\u{1F3CE}";
     }
     isPowerOn = !isPowerOn;
 })
